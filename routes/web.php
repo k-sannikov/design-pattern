@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(['prefix' => 'fundamentals'], function () {
+    Route::get('property-container', 'FundamentalPatternsController@propertyContainer');
+});
+
