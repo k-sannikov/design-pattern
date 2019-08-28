@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 Route::group(['prefix' => 'fundamentals'], function () {
     Route::get('property-container', 'FundamentalPatternsController@propertyContainer');
+    Route::get('delegation', 'FundamentalPatternsController@delegation');
 });
 
